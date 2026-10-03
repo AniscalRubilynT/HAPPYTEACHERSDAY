@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You, Teacher!</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ffe4ec, #dbeafe);
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 500px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      color: #e75480;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .teacher-photo {
+      width: 200px;
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #f8a5c2;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      color: #444;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+      overflow-wrap: break-word;
+    }
+
+    .heart {
+      font-size: 35px;
+      animation: heartbeat 1.3s infinite;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 12px; }
+      .card { padding: 22px 18px; }
+      h1 { font-size: 26px; }
+      .teacher-photo { width: 160px; border-width: 5px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="heart">💖</div>
+
+    <h1>Thank You, Teacher!</h1>
+
+    <p class="subtitle">
+      A little message from your student
+    </p>
+
+    <img 
+      src="teacher.jpg" 
+      alt="My Teacher"
+      class="teacher-photo"
+    >
+
+    <p class="message">
+      Dear Teacher,<br><br>
+
+      Thank you for your patience, kindness, and dedication.
+      You have taught me more than just lessons from a book.
+      You have inspired me to believe in myself and continue
+      learning even when things get difficult.
+
+      <br><br>
+
+      I am truly grateful for everything you do.
+      Your effort and guidance will always be remembered.
+
+      <br><br>
+
+      <strong>Thank you for being an amazing teacher! ❤️</strong>
+    </p>
+
+    <p><strong>🎵 A Song For You</strong></p>
+
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    
+
+    <div class="footer">
+      Made with ❤️ by your student
+    </div>
+
+  </div>
+
+</body>
+</html>
